@@ -22,24 +22,24 @@ int main() {
 	{
 #pragma omp section
 		{
-			cout << "Ðÿäîê ç ìíiìàëüíîþ ñóìîþ (ê-òü ïîòîêiâ = " << 1 << "): " << part_min_row(0, arr_size, 4) << endl;
-			cout << "Ðÿäîê ç ìíiìàëüíîþ ñóìîþ (ê-òü ïîòîêiâ = " << 4 << "): " << part_min_row(0, arr_size, 4) << endl;
-			cout << "Ðÿäîê ç ìíiìàëüíîþ ñóìîþ (ê-òü ïîòîêiâ = " << 8 << "): " << part_min_row(0, arr_size, 8) << endl;
-			cout << "Ðÿäîê ç ìíiìàëüíîþ ñóìîþ (ê-òü ïîòîêiâ = " << 16 << "): " << part_min_row(0, arr_size, 16) << endl;
-			cout << "Ðÿäîê ç ìíiìàëüíîþ ñóìîþ (ê-òü ïîòîêiâ = " << 32 << "): " << part_min_row(0, arr_size, 32) << endl;
+			cout << "Ð ÑÐ´Ð¾Ðº Ð· Ð¼Ð½iÐ¼Ð°Ð»ÑŒÐ½Ð¾ÑŽ ÑÑƒÐ¼Ð¾ÑŽ (Ðº-Ñ‚ÑŒ Ð¿Ð¾Ñ‚Ð¾ÐºiÐ² = " << 1 << "): " << part_min_row(0, arr_size, 4) << endl;
+			cout << "Ð ÑÐ´Ð¾Ðº Ð· Ð¼Ð½iÐ¼Ð°Ð»ÑŒÐ½Ð¾ÑŽ ÑÑƒÐ¼Ð¾ÑŽ (Ðº-Ñ‚ÑŒ Ð¿Ð¾Ñ‚Ð¾ÐºiÐ² = " << 4 << "): " << part_min_row(0, arr_size, 4) << endl;
+			cout << "Ð ÑÐ´Ð¾Ðº Ð· Ð¼Ð½iÐ¼Ð°Ð»ÑŒÐ½Ð¾ÑŽ ÑÑƒÐ¼Ð¾ÑŽ (Ðº-Ñ‚ÑŒ Ð¿Ð¾Ñ‚Ð¾ÐºiÐ² = " << 8 << "): " << part_min_row(0, arr_size, 8) << endl;
+			cout << "Ð ÑÐ´Ð¾Ðº Ð· Ð¼Ð½iÐ¼Ð°Ð»ÑŒÐ½Ð¾ÑŽ ÑÑƒÐ¼Ð¾ÑŽ (Ðº-Ñ‚ÑŒ Ð¿Ð¾Ñ‚Ð¾ÐºiÐ² = " << 16 << "): " << part_min_row(0, arr_size, 16) << endl;
+			cout << "Ð ÑÐ´Ð¾Ðº Ð· Ð¼Ð½iÐ¼Ð°Ð»ÑŒÐ½Ð¾ÑŽ ÑÑƒÐ¼Ð¾ÑŽ (Ðº-Ñ‚ÑŒ Ð¿Ð¾Ñ‚Ð¾ÐºiÐ² = " << 32 << "): " << part_min_row(0, arr_size, 32) << endl;
 		}
 
 #pragma omp section
 		{
-			cout << "Ñóìà âñüîãî (ê-òü ïîòîêiâ = " << 1 << "): " << part_sum(0, arr_size, 4) << endl;
-			cout << "Ñóìà âñüîãî (ê-òü ïîòîêiâ = " << 4 << "): " << part_sum(0, arr_size, 4) << endl;
-			cout << "Ñóìà âñüîãî (ê-òü ïîòîêiâ = " << 8 << "): " << part_sum(0, arr_size, 8) << endl;
-			cout << "Ñóìà âñüîãî (ê-òü ïîòîêiâ = " << 16 << "): " << part_sum(0, arr_size, 16) << endl;
-			cout << "Ñóìà âñüîãî (ê-òü ïîòîêiâ = " << 32 << "): " << part_sum(0, arr_size, 32) << endl;
+			cout << "Ð¡ÑƒÐ¼Ð° Ð²ÑÑŒÐ¾Ð³Ð¾ (Ðº-Ñ‚ÑŒ Ð¿Ð¾Ñ‚Ð¾ÐºiÐ² = " << 1 << "): " << part_sum(0, arr_size, 4) << endl;
+			cout << "Ð¡ÑƒÐ¼Ð° Ð²ÑÑŒÐ¾Ð³Ð¾ (Ðº-Ñ‚ÑŒ Ð¿Ð¾Ñ‚Ð¾ÐºiÐ² = " << 4 << "): " << part_sum(0, arr_size, 4) << endl;
+			cout << "Ð¡ÑƒÐ¼Ð° Ð²ÑÑŒÐ¾Ð³Ð¾ (Ðº-Ñ‚ÑŒ Ð¿Ð¾Ñ‚Ð¾ÐºiÐ² = " << 8 << "): " << part_sum(0, arr_size, 8) << endl;
+			cout << "Ð¡ÑƒÐ¼Ð° Ð²ÑÑŒÐ¾Ð³Ð¾ (Ðº-Ñ‚ÑŒ Ð¿Ð¾Ñ‚Ð¾ÐºiÐ² = " << 16 << "): " << part_sum(0, arr_size, 16) << endl;
+			cout << "Ð¡ÑƒÐ¼Ð° Ð²ÑÑŒÐ¾Ð³Ð¾ (Ðº-Ñ‚ÑŒ Ð¿Ð¾Ñ‚Ð¾ÐºiÐ² = " << 32 << "): " << part_sum(0, arr_size, 32) << endl;
 		}
 	}
 	double t2 = omp_get_wtime();
-	cout << "×àñ âñüîãî: " << t2 - t1 << " ñåêóíä" << endl;
+	cout << "Ð§Ð°Ñ Ð²ÑÑŒÐ¾Ð³Ð¾: " << t2 - t1 << " ÑÐµÐºÑƒÐ½Ð´" << endl;
 	return 0;
 }
 
@@ -62,7 +62,7 @@ long long part_sum(int start_index, int finish_index, int num_threads) {
 		}
 	}
 	double t2 = omp_get_wtime();
-	cout << "×àñ äëÿ ñóìè(ê-òü ïîòîêiâ " << num_threads << " ):" << t2 - t1 << " ñåêóíä" << endl;
+	cout << "Ð§Ð°Ñ Ð´Ð»Ñ ÑÑƒÐ¼Ð¸(Ðº-Ñ‚ÑŒ Ð¿Ð¾Ñ‚Ð¾ÐºiÐ² " << num_threads << " ):" << t2 - t1 << " ÑÐµÐºÑƒÐ½Ð´" << endl;
 	return sum;
 }
 
@@ -83,6 +83,6 @@ int part_min_row(int start_index, int finish_index, int num_threads) {
 		}
 	}
 	double t2 = omp_get_wtime();
-	cout << "×àñ äëÿ çíàõîäæåííÿ ðÿäêà ç ìiíiìàëüíîþ ñóìîþ(ê-òü ïîòîêiâ = " << num_threads << " : " << t2 - t1 << " ñåêóíä" << endl;
+	cout << "Ð§Ð°Ñ Ð´Ð»Ñ Ð·Ð½Ð°Ñ…Ð¾Ð´Ð¶ÐµÐ½Ð½Ñ Ñ€ÑÐ´ÐºÐ° Ð· Ð¼iÐ½iÐ¼Ð°Ð»ÑŒÐ½Ð¾ÑŽ ÑÑƒÐ¼Ð¾ÑŽ(Ðº-Ñ‚ÑŒ Ð¿Ð¾Ñ‚Ð¾ÐºiÐ² = " << num_threads << " : " << t2 - t1 << " ÑÐµÐºÑƒÐ½Ð´" << endl;
 	return min_row;
 }
