@@ -76,10 +76,12 @@ int part_min_row(int start_index, int finish_index, int num_threads) {
 		for (int j = 0; j < arr_size; j++) {
 			sum += arr[i][j];
 		}
-#pragma omp critical
-		if (minsum > sum) {
-			min_row = i;
-			minsum = sum;
+		if(minsum>sum){
+			#pragma omp critical
+			if (minsum > sum) {
+				min_row = i;
+				minsum = sum;
+			}
 		}
 	}
 	double t2 = omp_get_wtime();
